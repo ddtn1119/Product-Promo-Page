@@ -1,0 +1,128 @@
+body {
+    font-family: Gotham, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #00c3ff;
+}
+
+#promo {
+    text-align: center;
+    padding: 100px 20px;
+    line-height: 2;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.cta-button {
+    background-color: #00c3ff;
+    color: #121212;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #008db8;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.feature {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.step {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+#video-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#form-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    border: none;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #008db8;
+}
+
+@media (max-width: 768px) {
+    .features-container, .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
